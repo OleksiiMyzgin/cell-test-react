@@ -1,24 +1,9 @@
 import { useState } from 'react';
 
 import { MatrixType } from '../../types';
+import { getEmptyMatrix, generateRandomMatrix } from '../../utils';
 import GridRow from '../GridRow';
 import classes from './app.module.css';
-
-function getEmptyMatrix(): MatrixType {
-  return Array.from(Array(50), () => new Array(50).fill(0));
-}
-
-function generateRandomMatrix(): MatrixType {
-  const newMatrix = getEmptyMatrix();
-  const matrix = newMatrix.map((array) =>
-    array.map(() => {
-      const num = Math.ceil(Math.random() * 10);
-      if (num % 2 === 0) return 0;
-      return 1;
-    })
-  );
-  return matrix;
-}
 
 function App() {
   const [matrix, setMatrix] = useState<MatrixType>(() =>
