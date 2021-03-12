@@ -1,14 +1,16 @@
 {
   "parser": "@typescript-eslint/parser",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
   "extends": [
     "airbnb",
     "prettier",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended"
   ],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "jest"],
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/parsers": {
