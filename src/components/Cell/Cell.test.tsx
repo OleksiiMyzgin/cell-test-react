@@ -1,8 +1,16 @@
-import { queryAllByDisplayValue, render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 
 import Cell from './index';
 
-describe('Cell tests', () => {
+describe('Cell tests:', () => {
+  test('snapshot', () => {
+    const component = renderer.create(<Cell cell={0} />);
+    const tree = component.toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   test('display white element', () => {
     const { container } = render(<Cell cell={0} />);
 

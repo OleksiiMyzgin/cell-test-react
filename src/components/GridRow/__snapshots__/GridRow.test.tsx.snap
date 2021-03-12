@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridRow test: snapshot 1`] = `
+<div
+  className="grid"
+>
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+  <div
+    className="cell white"
+  />
+</div>
+`;
