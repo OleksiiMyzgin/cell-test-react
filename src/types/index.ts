@@ -1,2 +1,2 @@
-export interface GridRowType extends Array<number> {}
-export interface MatrixType extends Array<GridRowType> {}
+// export interface GridRowType extends Array<number> {}
+export interface MatrixType extends Array<number> {}
