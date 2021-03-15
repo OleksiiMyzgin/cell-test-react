@@ -1,11 +1,11 @@
 import { MatrixType } from '../types';
 
-export function getEmptyMatrix(): MatrixType {
-  return Array.from(Array(50), () => new Array(50).fill(0));
+export function getEmptyMatrix(size: number): MatrixType {
+  return Array.from(Array(size), () => new Array(size).fill(0));
 }
 
-export function generateRandomMatrix(): MatrixType {
-  const newMatrix = getEmptyMatrix();
+export function generateRandomMatrix(size: number): MatrixType {
+  const newMatrix = getEmptyMatrix(size);
   const matrix = newMatrix.map((array) =>
     array.map(() => {
       const num = Math.ceil(Math.random() * 10);

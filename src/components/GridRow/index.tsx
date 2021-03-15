@@ -1,6 +1,5 @@
 import Cell from '../Cell';
 import classes from './style.module.css';
-
 import { GridRowType } from '../../types';
 
 interface GridRowProps {

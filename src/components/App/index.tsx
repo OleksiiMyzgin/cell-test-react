@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { MatrixType } from '../../types';
+import { MATRIX_SIZE, MATRIX_CHANGE_SPEED } from '../../consts';
 import { getEmptyMatrix, generateRandomMatrix } from '../../utils';
 import GridRow from '../GridRow';
 import classes from './app.module.css';
 
 function App() {
   const [matrix, setMatrix] = useState<MatrixType>(() =>
-    generateRandomMatrix()
+    generateRandomMatrix(MATRIX_SIZE)
   );
 
+  useEffect(() => {
+    changeMatrix();
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(changeMatrix, MATRIX_CHANGE_SPEED);
+    return () => clearInterval(interval);
+  }, [matrix]);
+
   const changeMatrix = () => {
-    const newMatrix = [...getEmptyMatrix()];
+    const newMatrix = getEmptyMatrix(MATRIX_SIZE);
     for (let row = 0; row < matrix.length; row++) {
       for (let col = 0; col < matrix.length; col++) {
         const topCell =
@@ -67,8 +77,7 @@ function App() {
   };
 
   return (
-    <div className={classes.app} onClick={changeMatrix} aria-hidden="true">
-      Header
+    <div className={classes.app}>
       {matrix.map((list, index) => (
         <GridRow key={index} list={list} />
       ))}
